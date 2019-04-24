@@ -1,0 +1,49 @@
+{
+	"projectPath": "/Users/oliviawang/Documents/GitHub/Web-App-for-Smart-Refrigerator/SR-app",
+	"projectInfo": {
+		"ProjectName": "SR-app",
+		"ProjectPath": "/Users/oliviawang/Documents/GitHub/Web-App-for-Smart-Refrigerator/SR-app",
+		"InitializationTime": "",
+		"LastConfigurationTime": "",
+		"LastNPMInstallTime": "",
+		"FrontendLastBuildTime": "",
+		"LastPublishTime": "",
+		"BackendLastSyncTime": "",
+		"BackendLastBuildTime": "",
+		"BackendLastPushTime": "",
+		"BackendProjectID": "",
+		"BackendProjectName": "",
+		"BackendProjectConsoleUrl": "",
+		"BackendProjectCreationTime": "",
+		"BackendProjectLastUpdatedTime": "",
+		"Framework": "react-native"
+	},
+	"packageJson": {
+		"main": "node_modules/expo/AppEntry.js",
+		"scripts": {
+			"start": "expo start",
+			"android": "expo start --android",
+			"ios": "expo start --ios",
+			"eject": "expo eject",
+			"test": "node ./node_modules/jest/bin/jest.js --watchAll"
+		},
+		"jest": {
+			"preset": "jest-expo"
+		},
+		"dependencies": {
+			"@expo/samples": "2.1.1",
+			"expo": "^32.0.0",
+			"react": "16.5.0",
+			"react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+			"react-navigation": "^3.0.9"
+		},
+		"devDependencies": {
+			"babel-preset-expo": "^5.0.0",
+			"jest-expo": "^32.0.0"
+		},
+		"private": true
+	},
+	"framework": "react-native",
+	"initialStage": "clean-slate",
+	"strategy": "create"
+}

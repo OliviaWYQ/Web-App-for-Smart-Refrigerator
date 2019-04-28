@@ -30,7 +30,7 @@ class Main extends React.Component {
 }
 
 export default connect(
-    state => ({
-        // num: state.tabReducer.num
-    })
+    // state => ({
+    //     // num: state.tabReducer.num
+    // })
 )(Main);

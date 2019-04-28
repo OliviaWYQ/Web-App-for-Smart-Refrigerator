@@ -2,23 +2,23 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: px2rem(50px);
     display: flex;
     border-top: 1px solid #b6b6b6;
     background-color: rgba(246,246,246,0.95);
 
     .btn-item {
         flex: 1;
-        font-size: 14px;
+        font-size: px2rem(11px);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         color: #999;
         .tab-icon {
-            margin-bottom: 4px;
-            width: 26px;
-            height: 26px;
+            margin-bottom: px2rem(4px);
+            width: px2rem(26px);
+            height: px2rem(26px);
             background-size: cover;
         }
         &.active {

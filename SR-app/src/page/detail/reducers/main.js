@@ -1,7 +1,7 @@
-import tabReducer from './tabReducer.js';
+// import tabReducer from './tabReducer.js';
 
-import { combineReducers } from 'redux';
+// import { combineReducers } from 'redux';
 
-const reducers = combineReducers({
-    tabReducer
-})
+// const reducers = combineReducers({
+//     tabReducer
+// })

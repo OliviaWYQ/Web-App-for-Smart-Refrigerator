@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fs = require('fs');
@@ -45,13 +46,13 @@ const htmlArray = getHtmlArray(entryMap);
 module.exports = {
   mode: "development",
   devServer: {
-    contentBase: devPath
+    contentBase: devPath,
+    hot: true
   },
   entry: entryMap,
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  devtool: "inline-source-map",
   output: {
     path: devPath,
     filename: "[name].min.js"
@@ -60,13 +61,17 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        use: [{ loader: "babel-loader" }],
+        use: [{ loader: "babel-loader" },{loader: 'eslint-loader'}],
         include: srcRoot
       },
       { test: /\.css$/, use: ["style-loader", "css-loader"], include: srcRoot },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ["style-loader", "css-loader", "sass-loader",
+        {
+          loader: 'sass-resources-loader',
+          options: {resources: srcRoot + '/component/common.scss'}
+        }], 
         include: srcRoot
       },
       {
@@ -76,5 +81,8 @@ module.exports = {
       }
     ]
   },
-  plugins: [].concat(htmlArray)
+  plugins: [
+      new webpack.NamedModulesPlugin(),
+      new webpack.HotModuleReplacementPlugin()
+  ].concat(htmlArray)
 };

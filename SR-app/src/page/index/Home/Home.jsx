@@ -1,8 +1,11 @@
 import React from 'react';
 
+// import { Route, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 import Header from './Header/Header.jsx';
 import Category from './Category/Category.jsx';
 import ContentList from './ContentList/ContentList.jsx';
+
 /**
  * @constructor <Home />
  * @description Home Tab
@@ -24,4 +27,9 @@ import ContentList from './ContentList/ContentList.jsx';
      }
  }
 
- export default Home;
+ export default connect(
+     // state => ({
+     //     // num: state.tabReducer.num
+     // })
+ )(Home);
+//  export default withRouter(Home);

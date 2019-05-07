@@ -21,10 +21,10 @@ class BuyItem extends React.Component {
         // debugger;
         return list.map((item, index) => {
             return (
-                <div className="item-content scale-1px" key={index}>
-                    <img className="item-img" src={item.url}></img>
-                    <div className="item-info-content">
-                        <p className="item-title">{item.name}</p>
+                <div className="buy-item-content scale-1px" key={index}>
+                    <img className="buy-item-img" src={item.url}></img>
+                    <div className="buy-item-info-content">
+                        <p className="buy-item-title">{item.name}</p>
                     </div>
                 </div>
             )

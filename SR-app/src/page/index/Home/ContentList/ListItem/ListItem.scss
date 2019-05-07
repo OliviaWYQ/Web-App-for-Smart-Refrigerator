@@ -19,18 +19,28 @@
         margin-left: 8%;
     }
     .item-title {
+        // float: left;
         margin-top: 12px;
         font-size: 16px;
         font-weight: 500;
         color: #333;
     }
+    .item-change {
+        // float: left;
+        text-decoration: none;
+        margin-top: 16px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #656565;
+    }
+    
     .item-desc {
         margin-top: 16px;
         font-size: 14px;
     }
     .item-start {
         float: left;
-        margin-left: 18%;
+        // margin-left: 18%;
     }
     .item-to {
         float: left;

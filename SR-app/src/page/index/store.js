@@ -1,10 +1,18 @@
 import { createStore, applyMiddleware } from 'redux';
-
 import mainReducer from './reducers/main.js';
-
 import thunk from 'redux-thunk';
 
-const store = createStore(mainReducer, applyMiddleware(thunk));
+import createHistory from 'history/createHashHistory';
+
+import { routerMiddleware } from 'react-router-redux';
+
+const history = createHistory();
+
+history.replace('home');
+
+const historyMiddle = routerMiddleware(history);
+
+const store = createStore(mainReducer, applyMiddleware(thunk, historyMiddle));
 
 if (module.hot) {
     module.hot.accept('./reducers/main', ()=>{
@@ -12,4 +20,7 @@ if (module.hot) {
         store.replaceReducer(nextRootReducer);
     });
 }
-export default store;
+module.exports = {
+    store,
+    history
+}

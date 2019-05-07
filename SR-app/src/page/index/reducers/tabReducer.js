@@ -9,7 +9,7 @@ const initState = {
             key: TABKEY.home
         },
         {
-            name: 'History',
+            name: 'Chart',
             key: TABKEY.history
         },
         {

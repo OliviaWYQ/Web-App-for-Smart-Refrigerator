@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="230px" viewBox="0 0 414 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>iPhone 8 Plus</title>
+    <desc>Created with Sketch.</desc>
+    <g id="iPhone-8-Plus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#6CACE4" x="0" y="0" width="414" height="150"></rect>
+        <ellipse id="椭圆形" fill="#6CACE4" cx="207" cy="150" rx="250" ry="80"></ellipse>
+        <text id="SMART-FRIDGE" font-family="Copperplate-Bold, Copperplate" font-size="48" font-weight="bold" fill="#FFFFFF">
+            <tspan x="121.68" y="135">SMART  </tspan>
+            <tspan x="113.664" y="184">FRIDGE</tspan>
+        </text>
+    </g>
+</svg>

@@ -6,8 +6,13 @@ import { connect } from 'react-redux';
 
 import BottomBar from '../BottomBar/BottomBar';
 
+// import Home from '../Home/Home';
+// import Explore from '../Explore/Explore';
+import History from '../History/History';
+
 class Main extends React.Component {
-    constructor(props) {
+
+  constructor(props) {
         super(props);
         // this.props.num;
     }
@@ -23,6 +28,9 @@ class Main extends React.Component {
         return (
           <div>
             {/*<div className={'abc'} onClick={() => this.click()}>{num}</div>*/}
+            {/*<Home /> */}
+            {/**<Explore /> */}
+            <History />
             <BottomBar />
           </div>
         );

@@ -1,0 +1,45 @@
+.explore-item {
+    // border-top: 13px solid #efefef;
+    border-bottom: 13px solid #efefef;
+    .explore-item-inner {
+        display: flex;
+        padding-bottom: px2rem(18px);
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .item-img {
+        width: px2rem(40px);
+        height: px2rem(40px);
+        margin-top: px2rem(8px);
+        margin-left: px2rem(16px);
+        border-radius: 50%;
+    }
+    .item-right {
+        flex: 1;
+        margin-left: px2rem(15px);
+    }
+    .item-top {
+        height: px2rem(55px);
+        padding-top: px2rem(2px);
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .recipe-name {
+        font-size: px2rem(16px);
+        width: px2rem(275px);
+        height: px2rem(16px);
+        font-weight: 600;
+    }
+    .product-item {
+        font-size: px2rem(14px);
+        color: #666;
+        margin-top: px2rem(12px);
+    }
+    .p-total-cal {
+        float: right;
+        margin-right: 15px;
+        color: #151515;
+        margin-left: 2px;
+        letter-spacing: 1px;
+    }
+}

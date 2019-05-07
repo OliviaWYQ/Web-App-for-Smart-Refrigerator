@@ -5,9 +5,12 @@
         "window": true,
         "document": true,
         "module": true,
-        "require": true
+        "require": true,
+        "console": true
     },
     "rules": {
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "no-console": "off",
+        "no-debugger": "off"
     }
 }

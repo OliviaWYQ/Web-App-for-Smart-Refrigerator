@@ -1,0 +1,32 @@
+.item-content {
+    display: flex;
+    padding-top: px2rem(15px);
+    padding-bottom: px2rem(15px);
+    margin-left: px2rem(10px);
+    margin-right: px2rem(10px);
+    color: #656565;
+
+    &:after {
+        background-color: #e4e4e4;
+    }
+
+    .item-img {
+        margin-left: 20%;
+        width: px2rem(86px);
+        height: px2rem(86px);
+        border: 1px solid #e4e4e4;
+    }
+
+    .item-info-content {
+        flex: 1;
+        margin-left: 8%;
+    }
+
+    .item-title {
+        margin-left: 15%;
+        line-height: px2rem(86px);
+        font-size: px2rem(18px);
+        font-weight: 500;
+        color: #333;
+    }
+}

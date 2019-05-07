@@ -1,0 +1,24 @@
+.list-content {
+    .list-title {
+        text-align: center;
+        font-size: px2rem(16px);
+        margin-top: px2rem(7px);
+        margin-bottom: px2rem(5px);
+    }
+    .title-line {
+        display: inline-block;
+        border-bottom: 1px solid #949494;
+        height: px2rem(1px);
+        width: px2rem(50px);
+        margin-left: px2rem(10px);
+        margin-right: px2rem(10px);
+        margin-bottom: px2rem(4px);
+    }
+    .loading {
+        padding-top: 10px;
+        padding-bottom: 60px;
+        font-size: 14px;
+        text-align: center;
+        color: #ccc;
+    }
+}

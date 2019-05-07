@@ -17,7 +17,7 @@ const initState = {
             key: TABKEY.explore
         }
     ],
-    activeKey: TABKEY.home,
+    activeKey: TABKEY.history,
     num: 0
 };
 

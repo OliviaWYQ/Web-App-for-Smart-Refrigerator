@@ -1,0 +1,21 @@
+.explore {
+    .header {
+        width: 100%;
+        height: px2rem(64px);
+        background-color: #fff;
+        // border-top: 1px solid #b2b2b2;
+        border-bottom: 13px solid #efefef;
+        font-size: px2rem(17px);
+        color: #333;
+        text-align: center;
+        line-height: px2rem(64px);
+        font-weight: bold;
+    }
+    .loading {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        font-size: 14px;
+        text-align: center;
+        color: #ccc;
+    }
+}

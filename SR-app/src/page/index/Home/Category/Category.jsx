@@ -18,23 +18,39 @@ class Category extends React.Component {
         this.props.dispatch(getHeaderData());
     }
 
-    renderItems(){
+    renderTemp(){
         let items = this.props.items;
-
-        return items.map((item, index)=>{
-            return (
-                <div className="category-item" key={index}>
-                    <img className="item-icon" src={item.url}></img>
-                    <p className="item-name">{item.name}</p>
-                    <p className="item-data">{item.data}</p>
-                </div>
-            )
+        let temp = [];
+        items.map((item)=>{
+            temp.push(item.temp);
         });
+        return parseInt(temp.slice(-1));
+    }
+
+    renderHumid(){
+        // debugger;
+        let items = this.props.items;
+        let humid = [];
+        items.map((item)=>{
+            humid.push(item.humid);
+        });
+        return parseInt(humid.slice(-1));
     }
 
     render() {
         return (
-            <div className="category-content clearfix">{this.renderItems()}</div>
+            <div className="category-content clearfix">
+                <div className="category-item">
+                    <img className="item-icon" src="https://img.icons8.com/ultraviolet/100/000000/temperature.png"></img>
+                    <p className="item-name">Temp</p>
+                    <p className="item-data">{this.renderTemp()} ℃ </p>
+                </div>
+                <div className="category-item">
+                    <img className="item-icon" src="https://img.icons8.com/ultraviolet/100/000000/humidity.png"></img>
+                    <p className="item-name">Humid</p>
+                    <p className="item-data">{this.renderHumid()} % </p>
+                </div>
+            </div>
         );
     }
 }

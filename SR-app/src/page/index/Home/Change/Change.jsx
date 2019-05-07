@@ -61,13 +61,11 @@ class Change extends React.Component {
                         </div>
                     </div>
                     <div className="change-info-header clearfix">
-                        <p className = "change-head"> Date </p>
+                        <p className = "change-head"> Expire </p>
                     </div>
                     <div className="change-info-content clearfix">
                         <div className = "change-text">
-                            <div className="change-start">Start:</div>
-                            <TextView value={this.state.start} placeholder = {"Change Start Date"} />
-                            <div className="change-end">End:</div>
+                            <div className="change-end"></div>
                             <TextView value={this.state.end} placeholder = {"Change End Date"} />
                         </div>
                     </div>

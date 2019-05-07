@@ -4,7 +4,7 @@ import axios from 'axios';
 export const getListData = ()=>(dispatch)=>{
     axios({
         method: 'get',
-        url: '/json/homelist-new.json'
+        url: '/json/foodRecord.json'
     }).then((resp) => {
         dispatch({
             type: LIST_DATA,

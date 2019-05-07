@@ -1,7 +1,7 @@
 import React from 'react';
 import './MyHistory.scss';
 import TempChart from './TChart/TChart.jsx';
-import HumidChart from './HChart/HChart.jsx';
+// import HumidChart from './HChart/HChart.jsx';
 import CalChart from './CChart/CChart.jsx';
 
 class History extends React.Component {
@@ -14,8 +14,6 @@ class History extends React.Component {
                 </div>
                 <div className="TempChart"></div>
                 <TempChart />
-                <div className="HumidChart"></div>
-                <HumidChart />
                 <div className="CalChart"></div>
                 < CalChart / >
                 <div className="loading"></div>

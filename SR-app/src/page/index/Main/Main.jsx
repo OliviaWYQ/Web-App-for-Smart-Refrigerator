@@ -30,9 +30,9 @@ class Main extends React.Component {
         return (
           <div>
               <Route exact path="/home" component={Home}/>
-              <Route path="/change" component={Change}/>
               <Route path="/history" component={MyHistory}/>
               <Route path="/explore" component={Explore}/>
+              <Route path="/change" component={Change}/>
               <BottomBar />
           </div>
         );

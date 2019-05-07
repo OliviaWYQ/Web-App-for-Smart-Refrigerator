@@ -22,6 +22,7 @@ import ContentList from './ContentList/ContentList.jsx';
                 <Header />
                 <Category />
                 <ContentList />
+                
              </div>
          );
      }

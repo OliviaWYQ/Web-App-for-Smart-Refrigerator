@@ -1,16 +1,14 @@
-import { HEAD_DATA } from "./actionTypes";
+import { TEMP_DATA } from "./actionTypes";
 import axios from 'axios';
 
-export const getHeaderData = ()=>(dispatch)=>{
+export const getListData = ()=>(dispatch)=>{
     axios({
         method: 'get',
         url: '/json/THRecord.json'
     }).then((resp) => {
         dispatch({
-            type: HEAD_DATA,
+            type: TEMP_DATA,
             obj: resp.data
         })
-        // this.props.dispatch(getHeaderData(resp.data));
     });
-
 }

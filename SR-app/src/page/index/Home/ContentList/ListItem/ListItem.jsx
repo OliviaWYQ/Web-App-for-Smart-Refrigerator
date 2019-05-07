@@ -22,15 +22,16 @@ class ListItem extends React.Component {
 
     render() {
         let data = this.props.itemData;
+        // console.log(this.index);
         return (
             <div className="item-content scale-1px" >
                 <img className="item-img" src={data.url}></img>
                 {/**<div className="food">Food</div>*/}
                 <div className="item-info-content">
-                    <p className="item-title">{data.name}</p>
+                    <p className="item-title">{data.name} ( {data.cal} cal / {data.weight} g )</p>
                     <div className="item-desc clearfix">
-                        <div className="item-start">{data.start}</div>
-                        <div className="item-to">to</div>
+                        <div className="item-start">Start: {data.start}</div>
+                        <div className="item-to">Expire:</div>
                         <div className="item-end">{data.end}</div>
                     </div>
                     <NavLink className="item-change" replace={true} to={"/change"} onClick={()=>this.handle()}>Change</NavLink>

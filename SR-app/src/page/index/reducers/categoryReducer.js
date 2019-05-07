@@ -5,7 +5,7 @@ const initState = {
 };
 
 const getCategory = (state, action) => {
-    return {...state, items: action.obj.data.primary_filter};
+    return {...state, items: action.obj.data.poilist};
 }
 
 const categoryReducer = (state = initState, action) => {

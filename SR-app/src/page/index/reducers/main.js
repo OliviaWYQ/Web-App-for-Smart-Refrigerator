@@ -3,6 +3,7 @@ import categoryReducer from './categoryReducer.js';
 import contentListReducer from './contentListReducer.js';
 import exploreReducer from './exploreReducer.js';
 import buyReducer from './buyReducer.js';
+import tempReducer from './tempReducer.js';
 
 import { combineReducers } from 'redux';
 
@@ -14,6 +15,7 @@ const mainReducers = combineReducers({
   contentListReducer,
   exploreReducer,
   buyReducer,
+  tempReducer,
   router: routerReducer
 });
 

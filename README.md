@@ -24,3 +24,11 @@ Web App for Smart Refrigerator, using Intel Edison and AWS service.
 * Displaying the foods in the fridge
 * Real-time temperature & humidity and cal. Consumption tracking
 * Recommendation for the recipe based on the current food in the fridge
+
+# Refer to the video:
+The layout of hardware in our fridge:
+https://youtu.be/imrrzTbKiTo
+
+Demo:
+https://youtu.be/1YkmIRnyfyo
+

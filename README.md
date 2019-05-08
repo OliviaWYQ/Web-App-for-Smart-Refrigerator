@@ -26,7 +26,7 @@ Web App for Smart Refrigerator, using Intel Edison and AWS service.
 * Recommendation for the recipe based on the current food in the fridge
 
 # Front-end demo
-[img1](https://github.com/OliviaWYQ/Web-App-for-Smart-Refrigerator/blob/master/demo_img/img1.png)
+![image](https://github.com/OliviaWYQ/Web-App-for-Smart-Refrigerator/blob/master/demo_img/img1.png)
 
 # Refer to the video:
 The layout of hardware in our fridge:

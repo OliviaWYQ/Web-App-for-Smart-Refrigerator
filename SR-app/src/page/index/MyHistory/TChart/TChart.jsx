@@ -1,5 +1,5 @@
 import React from 'react';
-import './TChart.scss';
+// import './TChart.scss';
 import Chart from "react-google-charts";
 
 import { connect } from 'react-redux';

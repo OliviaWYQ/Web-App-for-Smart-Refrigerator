@@ -7,7 +7,7 @@ export const getListData = ()=>(dispatch)=>{
         // url: '/json/foodRecord.json'
 
         method: 'post',
-        url: 'http://localhost:3000/api',
+        url: 'http://192.168.1.37:3000/api',
         data: {
             url: '../json/foodRecord.json'
             // params: {

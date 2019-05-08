@@ -94,6 +94,7 @@ function onScan(err, data) {
         console.log(globalString);
 
         fs.writeFileSync('../SR-app/dev/json/foodRecord.json', list_data);
+        fs.writeFileSync('../SR-app/src/json/foodRecord.json', list_data);
         fs.writeFileSync('./json/foodRecord.json', list_data);
         fs.writeFileSync('./public/json/foodRecord.json', list_data);
 

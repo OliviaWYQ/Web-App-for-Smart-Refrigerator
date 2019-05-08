@@ -1,7 +1,7 @@
 import { HEAD_DATA } from "./actionTypes";
 import axios from 'axios';
 
-export const getHeaderData = ()=>(dispatch)=>{
+export const getHeaderData = () => (dispatch)=>{
     axios({
         method: 'get',
         url: '/json/THRecord.json'

@@ -46,6 +46,7 @@ module.exports.log = function (food) {
 
       if (data != [] && data.more == true) {
         fs.writeFileSync('../SR-app/dev/json/recipe.json', body);
+        fs.writeFileSync('../SR-app/src/json/recipe.json', body);
         fs.writeFileSync('./json/recipe.json', body);
         fs.writeFileSync('./public/json/recipe.json', body);
       }

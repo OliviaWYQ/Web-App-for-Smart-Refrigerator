@@ -65,6 +65,7 @@ function onScan(err, data) {
 
         let list_data = JSON.stringify(list);
         fs.writeFileSync('../SR-app/dev/json/THRecord.json', list_data);
+        fs.writeFileSync('../SR-app/src/json/THRecord.json', list_data);
         fs.writeFileSync('./json/THRecord.json', list_data);
         fs.writeFileSync('./public/json/THRecord.json', list_data);
 

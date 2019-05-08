@@ -1,6 +1,12 @@
 # Web-App-for-Smart-Refrigerator
 Web App for Smart Refrigerator, using Intel Edison and AWS service.
 
+# Summary
+* Determine food category(label) in the refrigerator by image recognition, and update the information on the server and mobile App.
+* Maintain a real-time data of food collection in fridge with related information(calorie, weight, expiration date, etc.)
+* Track food expiration dates and monitor the internal temperature and humidity of the refrigerator.
+* Give users recipe recommendations based on the current food in the refrigerator.
+
 # Detailed Description
 
 ## Sensor node are responsible for

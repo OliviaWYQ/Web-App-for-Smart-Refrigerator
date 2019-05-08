@@ -38,6 +38,7 @@ let total = [];
 let recipe = require('./get_recipe');
 let food_name = [];//'chicken', 'egg', 'tomato'];
 
+global.globalList = null;
 
 function onScan(err, data) {
     if (err) {
@@ -87,6 +88,11 @@ function onScan(err, data) {
         }
 
         let list_data = JSON.stringify(list);
+        global.globalList = list_data;
+        console.log(globalList);
+        global.globalString = "This can be accessed anywhere!";
+        console.log(globalString);
+
         fs.writeFileSync('../SR-app/dev/json/foodRecord.json', list_data);
         fs.writeFileSync('./json/foodRecord.json', list_data);
         fs.writeFileSync('./public/json/foodRecord.json', list_data);
@@ -101,6 +107,10 @@ function onScan(err, data) {
             params.ExclusiveStartKey = data.LastEvaluatedKey;
             docClient.scan(params, onScan);
         }
-
+        // console.log('return list', list_data);
+        // 
     }
 }
+
+// console.log('return list', globalList);
+// module.exports = globalList;

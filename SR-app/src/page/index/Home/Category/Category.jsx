@@ -3,6 +3,8 @@ import './Category.scss';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import { getHeaderData } from '../../actions/categoryAction';
+// import { LIST_DATA } from "../../actions/actionTypes";
+import { getListData } from '../../actions/contentListAction';
 /**
  * @constructor < Category / >
  * @description Home Category
@@ -43,15 +45,19 @@ class Category extends React.Component {
             method: 'post',
             url: 'http://localhost:3000/api',
             data: {
-                url: 'http://i.waimai.meituan.com/ajax/v7/home/head',
-                params: {
-                    not_need_primart_filter: false,
-                    userid: 280770501
-                }
+                // url: 'http://i.waimai.meituan.com/ajax/v7/home/head',
+                // params: {
+                //     not_need_primart_filter: false,
+                //     userid: 280770501
+                // }
+                url: '../json/foodRecord.json'
             }
         });
 
         console.log(resp);
+        // console.log('get list');
+        this.props.dispatch(getListData());
+        
     }
 
     render() {

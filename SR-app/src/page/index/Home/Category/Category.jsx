@@ -1,6 +1,6 @@
 import React from 'react';
 import './Category.scss';
-
+import axios from 'axios';
 import { connect } from 'react-redux';
 import { getHeaderData } from '../../actions/categoryAction';
 /**
@@ -37,6 +37,23 @@ class Category extends React.Component {
         return parseInt(humid.slice(-1));
     }
 
+    refresh(){
+        console.log('refresh');
+        let resp = axios({
+            method: 'post',
+            url: 'http://localhost:3000/api',
+            data: {
+                url: 'http://i.waimai.meituan.com/ajax/v7/home/head',
+                params: {
+                    not_need_primart_filter: false,
+                    userid: 280770501
+                }
+            }
+        });
+
+        console.log(resp);
+    }
+
     render() {
         return (
             <div className="category-content clearfix">
@@ -49,6 +66,10 @@ class Category extends React.Component {
                     <img className="item-icon" src="https://img.icons8.com/ultraviolet/100/000000/humidity.png"></img>
                     <p className="item-name">Humid</p>
                     <p className="item-data">{this.renderHumid()} % </p>
+                </div>
+                <div className="category-item" onClick={()=>{this.refresh()}}>
+                    <img className="item-icon" src="https://img.icons8.com/color/96/000000/connection-sync.png"></img>
+                    <p className="item-name" >Refresh</p>
                 </div>
             </div>
         );

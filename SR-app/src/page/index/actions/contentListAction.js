@@ -16,6 +16,7 @@ export const getListData = ()=>(dispatch)=>{
         //         userid:''
         //     }
         // }
+        
     }).then((resp) => {
         dispatch({
             type: LIST_DATA,

@@ -15,12 +15,30 @@ class TempChart extends React.Component {
         this.props.dispatch(getListData());
     }
 
+    transform_time(timestamp) {
+        var date = new Date(timestamp * 1000);
+        // Hours part from the timestamp
+        // var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        var month = date.getMonth();
+        var day = date.getDate();
+        var hours = date.getHours();
+        // Minutes part from the timestamp
+        var minutes = "0" + date.getMinutes();
+        // Seconds part from the timestamp
+        // var seconds = "0" + date.getSeconds();
+        // Will display time in 10:30:23 format
+        var formattedTime = month+'/'+day+' '+hours+':'+ minutes.substr(-2);// + ':' + seconds.substr(-2);
+        return formattedTime;
+    }
+
     renderTempItems(){
         let list = this.props.list;
+        list.sort((a, b) => a.time - b.time);
+        // console.log(list);
         let tempdata = [["Time", "Temperature (℃)"]];
         list.map((item,index)=>{
             if (index >= Object.keys(list).length - 7) {
-              tempdata.push([String(item.time), parseFloat(item.temp)]);
+              tempdata.push([String(this.transform_time(item.time)), parseFloat(item.temp)]);
             }
         });
         // console.log(tempdata);
@@ -32,7 +50,7 @@ class TempChart extends React.Component {
         let humiddata = [["Time", "Humidity (%)"]];
         list.map((item, index) => {
             if (index >= Object.keys(list).length - 7) {
-              humiddata.push([String(item.time), parseFloat(item.humid)]);
+              humiddata.push([String(this.transform_time(item.time)), parseFloat(item.humid)]);
             }
         });
         return humiddata;

@@ -4,6 +4,13 @@
  * Module dependencies.
  */
 
+//modules update
+// var ddb_food = require('../ddb_scan');
+// console.log(ddb_food);
+// var ddb_chart = require('../ddb_scan_chart');
+// console.log(ddb_chart);
+
+//original
 var app = require('../app');
 var debug = require('debug')('sr-server:server');
 var http = require('http');

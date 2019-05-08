@@ -1,1 +1,1 @@
-{"data":{"poilist":[{"name":"Apple","inside":true,"start":"1557297407","end":27,"cal":101,"weight":"195","url":"https://s3.amazonaws.com/iotproject2019/in_1557297407_195_test.jpg","username":"test"},{"name":"Broccoli","inside":true,"start":"1557297169","end":52,"cal":166,"weight":"487","url":"https://s3.amazonaws.com/iotproject2019/in_1557297169_487_test.jpg","username":"test"}]},"msg":"succeed"}
+{"data":{"poilist":[]},"msg":"succeed"}

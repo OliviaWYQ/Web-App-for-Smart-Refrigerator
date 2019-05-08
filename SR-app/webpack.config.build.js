@@ -7,8 +7,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const fs = require('fs');
 const srcRoot = path.resolve(__dirname, 'src');
 // const devPath = path.resolve(__dirname, 'dev');
-// const distPath = path.resolve(__dirname, 'dist');
-const distPath = path.resolve(__dirname, '../SR-server/public');
+const distPath = path.resolve(__dirname, 'dist');
+// const distPath = path.resolve(__dirname, '../SR-server/public');
 const pageDir = path.resolve(srcRoot, 'page');
 const mainFile = 'index.js';
 

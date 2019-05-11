@@ -39,6 +39,11 @@ Web App for Smart Refrigerator, using Intel Edison and AWS service.
 
 <img src="https://github.com/OliviaWYQ/Web-App-for-Smart-Refrigerator/blob/master/demo_img/img4.png" width = "300" height = "500" alt="img4" align=center />
 
+# Contributors
+Maoxin Hou - Hardware
+Xiren Zhou - AWS Cloud 
+Yiqian Wang - Web App
+
 # Refer to the video:
 The layout of hardware in our fridge:
 https://youtu.be/imrrzTbKiTo

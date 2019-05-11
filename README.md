@@ -41,7 +41,9 @@ Web App for Smart Refrigerator, using Intel Edison and AWS service.
 
 # Contributors
 Maoxin Hou - Hardware
+
 Xiren Zhou - AWS Cloud 
+
 Yiqian Wang - Web App
 
 # Refer to the video:

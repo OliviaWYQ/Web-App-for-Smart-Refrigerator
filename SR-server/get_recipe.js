@@ -36,7 +36,7 @@ module.exports.log = function (food) {
 
   // console.log(data.hits);
 
-  request("https://api.edamam.com/search?q=" + combine + "&app_id=058d00ed&app_key=86ae03cf206be898b363a87b561a963f&from=0&to=3&calories=591-722&health=alcohol-free", function (error, response, body) {
+  request("https://api.edamam.com/search?q=" + combine + "&app_id=<MYAPPID>&app_key=<MYAPPKEY>&from=0&to=3&calories=591-722&health=alcohol-free", function (error, response, body) {
     if (!error && response.statusCode == 200) {
       // let data = JSON.stringify(body);
 

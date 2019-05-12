@@ -36,6 +36,8 @@ Web App for Smart Refrigerator, using Intel Edison and AWS service.
 
 ![image](https://github.com/OliviaWYQ/Web-App-for-Smart-Refrigerator/blob/master/demo_img/img6.png)
 
+![image](https://github.com/OliviaWYQ/Web-App-for-Smart-Refrigerator/blob/master/demo_img/img7.png)
+
 # Front-end demo
 
 <img src="https://github.com/OliviaWYQ/Web-App-for-Smart-Refrigerator/blob/master/demo_img/img1.png" width = "300" height = "500" alt="img1" align=center />

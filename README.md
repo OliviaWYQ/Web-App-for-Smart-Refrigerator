@@ -60,13 +60,18 @@ Xiren Zhou - AWS Cloud
 
 Yiqian Wang - Web App
 
-# Refer to the video:
+# Refer to the video
 
-The layout of hardware in our fridge:
-https://youtu.be/imrrzTbKiTo
+For the layout of hardware in the fridge, we have a demonstration video: 
+https://www.youtube.com/watch?v=imrrzTbKiTo
 
-Demo:
-https://youtu.be/1YkmIRnyfyo
+For the complete working process of the system, we have a testing video:
+https://www.youtube.com/watch?v=1YkmIRnyfyo
+
+# Website
+
+Our website for this project:
+https://iotcolumbia2019moha.weebly.com/ 
 
 # Acknowledgement
 
